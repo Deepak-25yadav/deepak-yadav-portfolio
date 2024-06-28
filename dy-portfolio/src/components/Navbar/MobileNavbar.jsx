@@ -23,7 +23,9 @@ function MobileNavbar() {
           <MenuButton
             as={IconButton}
             aria-label="Options"
-            icon={<HamburgerIcon />}
+            marginLeft={5}
+            m={3}
+            icon={<HamburgerIcon color="#25b04a" boxSize={"1.2em"}/>}
             variant="outline"
           />
           <MenuList>

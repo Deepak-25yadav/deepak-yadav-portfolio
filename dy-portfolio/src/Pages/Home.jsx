@@ -13,7 +13,7 @@ import {
   Link,
   useColorMode,
 } from "@chakra-ui/react";
-import * as Scroll from "react-scroll"
+import * as Scroll from "react-scroll";
 import { RxGithubLogo } from "react-icons/rx";
 import { BsLinkedin } from "react-icons/bs";
 import { TfiDownload, TfiEmail } from "react-icons/tfi";
@@ -54,7 +54,6 @@ function Home() {
         "2xl": "100vh",
       }}
       id="home"
-
     >
       <Flex justifyContent={"space-evenly"} w="100%">
         <Box>
@@ -83,15 +82,12 @@ function Home() {
                 loop={1}
                 wrapper="p"
               />
-             
-              
             </Heading>
           </motion.div>
 
           <Heading
             mb={"20px"}
             fontFamily="'Poppins', sans-serif"
-
             fontSize={{
               sm: "20px",
               md: "25px",
@@ -110,13 +106,12 @@ function Home() {
               xl: "55%",
               "2xl": "55%",
             }}
-          fontFamily="'Poppins', sans-serif"
-
+            fontFamily="'Poppins', sans-serif"
           >
-  Having good knowledge of MongoDB, Express, React, Node.js, JavaScript, HTML, CSS etc.
-   Passionate about learning new technologies and aiming to create world-class web applications while facilitating organizations in achieving ambitious goals.
-
-
+            Having good knowledge of MongoDB, Express, React, Node.js,
+            JavaScript, HTML, CSS etc. Passionate about learning new
+            technologies and aiming to create world-class web applications while
+            facilitating organizations in achieving ambitious goals.
           </Text>
           <Hide below="md">
             <AnimatedFlex
@@ -163,24 +158,21 @@ function Home() {
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.8 }}
                 >
-
-<Scroll.Link
-          activeClass="active"
-          to="contact"
-          spy={true}
-          offset={-100}
-         
-        >
-
-                  <Box 
-                  // id="contact-phone"
-                   onClick={()=>{
-                  window.location.href="tel:+919140443308";
-                }}>
-                    <FiPhoneCall size="50px" />
-                  </Box>
-        </Scroll.Link>
-
+                  <Scroll.Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    offset={-100}
+                  >
+                    <Box
+                      // id="contact-phone"
+                      onClick={() => {
+                        window.location.href = "tel:+919140443308";
+                      }}
+                    >
+                      <FiPhoneCall size="50px" />
+                    </Box>
+                  </Scroll.Link>
                 </motion.div>
               </Tooltip>
               <Tooltip hasArrow label="Email" bg="gray.300" color="black">
@@ -188,18 +180,14 @@ function Home() {
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.8 }}
                 >
-            
-
                   <Box
                     // id="contact-email"
                     onClick={() => {
-                      window.location.href =
-                        "mailto:25yadavdeepak@gmail.com";
+                      window.location.href = "mailto:25yadavdeepak@gmail.com";
                     }}
                   >
                     <TfiEmail size="50px" />
                   </Box>
-
                 </motion.div>
               </Tooltip>
             </AnimatedFlex>
@@ -212,12 +200,16 @@ function Home() {
               mb={"20px"}
             >
               <Tooltip hasArrow label="Github" bg="gray.300" color="black">
-                <NavLink to={"https://github.com/Deepak-25yadav"} target={"_blank"}>
+                <NavLink
+                  to={"https://github.com/Deepak-25yadav"}
+                  target={"_blank"}
+                >
                   <Box id="contact-github">
                     <RxGithubLogo size="20px" border-radius="50%" />
                   </Box>
                 </NavLink>
               </Tooltip>
+
               <Tooltip hasArrow label="LinkedIn" bg="gray.300" color="black">
                 <NavLink
                   to={"https://www.linkedin.com/in/deepak0606/"}
@@ -229,31 +221,18 @@ function Home() {
                 </NavLink>
               </Tooltip>
 
-
-
               <Tooltip hasArrow label="Contact" bg="gray.300" color="black">
-                <Box
-                //  id="contact-phone" 
-                //  onClick={()=>{
-                //   window.location.href =
-                //   "tel:+918793935129";
-                // }}
-                >
-
-<Link
+                <Link
                   href="tel:+919140443308"
                   fontWeight="bold"
                   ml="2"
                   _hover={{ color: "blue.500" }}
                 >
-                  <FiPhoneCall size="20px" />
+                  <Box>
+                    <FiPhoneCall size="20px" />
+                  </Box>
                 </Link>
-                </Box>
               </Tooltip>
-
-
-
-
 
               <Tooltip hasArrow label="Email" bg="gray.300" color="black">
                 <Box
@@ -296,8 +275,7 @@ function Home() {
               bgColor={colorMode === "dark" ? "#48BB78" : "none"}
               borderRadius={"10px"}
               fontSize={["xs", "sm", "lg", "xl"]}
-          fontFamily="'Poppins', sans-serif"
-
+              fontFamily="'Poppins', sans-serif"
             >
               Resume
               <Box as={"span"} ml={"1"} fontSize={["xs", "sm", "lg", "xl"]}>
